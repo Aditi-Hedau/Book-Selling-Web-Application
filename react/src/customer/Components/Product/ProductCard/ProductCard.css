@@ -1,0 +1,52 @@
+.productCard {
+  width: 14rem;
+  transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.productCard .textPart {
+  transition: transform 0.3s ease-out;
+}
+
+.productCard:hover .textPart {
+  transform: translateY(-1rem);
+}
+
+.productCard:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+              rgba(0, 0, 0, 0.12) 0px -12px 30px,
+              rgba(0, 0, 0, 0.12) 0px 4px 6px,
+              rgba(0, 0, 0, 0.17) 0px 12px 13px,
+              rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.productCard img {
+  width: 100%; /* Ensure the image covers the width of the card */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensure the image fits within the container without distortion */
+}
+
+.textPart {
+  padding: 1rem;
+  border-radius: 0 0 8px 8px;
+  background-color: #ffffff;
+}
+
+.productCard .textPart p {
+  margin: 0.5rem 0;
+}
+
+.productCard .textPart .font-bold {
+  font-size: 1.1rem;
+}
+
+.productCard .textPart .font-semibold {
+  font-size: 1.2rem;
+}
+
+.productCard .textPart .line-through {
+  text-decoration: line-through;
+}
+
+.productCard .textPart .text-green-600 {
+  color: #34a853;
+}
